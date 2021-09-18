@@ -50,9 +50,8 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
-            // the "scss" and "sass" values for the lang attribute to the right configs here.
-            // other preprocessors should work out of the box, no loader config like this necessary.
+            // Поскольку sass-загрузчик (как ни странно) применяет SCSS в качестве режима синтаксического анализа по умолчанию, здесь мы сопоставляем значения "scss" и "sass" для атрибута lang с правильными конфигурациями. 
+            // Другие препроцессоры должны работать "из коробки", им такой конфигурации загрузчика не требуется.
             'scss': [
               'vue-style-loader',
               'css-loader',
@@ -64,7 +63,7 @@ module.exports = {
               'sass-loader?indentedSyntax'
             ]
           }
-          // other vue-loader options go here
+          // Здесь находятся другие параметры загрузчика vue.
         }
       },
       {

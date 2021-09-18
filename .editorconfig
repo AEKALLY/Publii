@@ -1,7 +1,7 @@
-# top-most EditorConfig file
+# Самый верхний файл EditorConfig.
 root = true
 
-# Unix-style newlines with a newline ending every file
+# Новые строки в стиле Unix с новой строкой, завершающей каждый файл.
 [*]
 end_of_line = lf
 insert_final_newline = true

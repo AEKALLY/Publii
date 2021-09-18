@@ -1,7 +1,7 @@
 "use strict";
 
 /*
- * Necessary plugins
+ * Требуются плагины.
  */
 const gulp = require('gulp');
 const sass = require('gulp-sass');
@@ -9,7 +9,7 @@ const exec = require('child_process').exec;
 const fs = require('fs');
 
 /*
- * Paths configuration
+ * Конфигурация путей.
  */
 const paths = {
     "frontend-js":      'app/js/front-end/',
@@ -20,7 +20,7 @@ const paths = {
 };
 
 /*
- * Parse SASS into CSS
+ * Синтаксический анализ SASS в CSS.
  */
 gulp.task('prepare-editor-css', function() {
     gulp.src(paths.sass + 'editor.scss')
@@ -33,7 +33,7 @@ gulp.task('prepare-editor-css', function() {
 });
 
 /*
- * Build
+ * Сборка.
  */
 gulp.task('build', function() {
     let buildData = JSON.parse(fs.readFileSync('app/back-end/builddata.json'));

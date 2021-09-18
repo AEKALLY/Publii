@@ -1,5 +1,5 @@
 /*
- * Module which loads all Event classes
+ * Модуль, загружающий все классы событий - Events.
  */
 module.exports = {
     AppEvents: require('./app.js'),

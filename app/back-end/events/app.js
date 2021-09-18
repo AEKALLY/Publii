@@ -6,7 +6,7 @@ const AppFiles = require('../helpers/app-files.js');
 const unzip = require("unzipper");
 
 /*
- * Events for the IPC communication regarding app
+ * События для коммуникации IPC относительно app.
  */
 
 class AppEvents {
